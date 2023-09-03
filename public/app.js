@@ -42,5 +42,17 @@ function checkDraw(){
 
 function endGame(){
     isGameOver =true;
-    resultContainer.textContent=isGameOver?"Game Over":`Player`
+    resultContainer.textContent=isGameOver?"Game Over":`Player ${currentPlayer} Wins!`;
+    resetButton.removeAttribute('disabled');
 }
+
+resetButton.addEventListener('click',() => {
+    board.forEach(cell => {
+        cell.value='';
+        cell.classList.remove('X','O');
+    });
+
+    currentPlayer = 'x';
+    isGameOver=false;
+    resultContainer.textContent=`Player `
+})
