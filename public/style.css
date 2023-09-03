@@ -62,16 +62,17 @@ h1{
   text-align: center;
   margin: 10px;
 }
-#reset-button{
+#reset{
   
-  
+  color: #000;
   cursor:pointer;
-  margin-left:730px;
+  margin-left:720px;
+  margin-top: 20px;
   font-size: 20px;
   padding: 5px 15px;
   transition: background-color 0.2s,color 0.2s;
 }
-#reset-button:hover{
+#reset:hover{
   background-color: #000;
   color:#fff;
 }
