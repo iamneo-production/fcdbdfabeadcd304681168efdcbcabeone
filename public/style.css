@@ -21,3 +21,7 @@ body {
   align-items: center;
   margin: 35px;
 }
+.row{
+  display: flex;
+  justify-content: center;
+}
