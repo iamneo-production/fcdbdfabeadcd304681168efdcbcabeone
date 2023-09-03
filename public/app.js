@@ -30,5 +30,17 @@ function checkWin(){
         [0,4,8],[2,4,6]
     ];
 
-    return winningCombos.some
+    return winningCombos.some(combo => {
+        const [a,b,c] =combo;
+        return board[a].value && board[a].value === board[b].value && board[a].value === board[c].value;
+    })
+}
+
+function checkDraw(){
+    return [...board].every(cell => cell.value);
+}
+
+function endGame(){
+    isGameOver =true;
+    resultContainer.textContent=isGameOver?"Game Over":`Player`
 }
