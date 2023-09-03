@@ -54,5 +54,8 @@ resetButton.addEventListener('click',() => {
 
     currentPlayer = 'x';
     isGameOver=false;
-    resultContainer.textContent=`Player `
-})
+    resultContainer.textContent=`Player ${currentPlayer}'s Turn`;
+    resetButton.setAttribute('disabled',true);
+});
+
+resultContainer.textContent=`Player ${currentPlayer}'s Turn`;
