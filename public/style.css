@@ -25,3 +25,29 @@ body {
   display: flex;
   justify-content: center;
 }
+.btn{
+  width:75px;
+  height:75px;
+  border:2px solid #fff;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: #fff;
+  background-color: rgba(255,255,255,0.8);
+  cursor:pointer;
+  user-select: none;
+}
+.btn:hover{
+  background-color: rgba(255,255,255,0.6);
+}
+.btn:disabled{
+  color:#000;
+  cursor:not-allowed;
+}
+.result-container{
+  background-color:rgba(255,255,255,0.8);
+  border:2px solid #fff;
+  text-align: ce;
+}
